@@ -16,21 +16,21 @@ Production-ready NLP pipeline for summarizing legal documents using BART, FastAP
 
 ---
 
-## ✨ Features
+##  Features
 
-- 📄 Supports **PDF**, **DOCX**, and **plain text**
-- 🧠 Transformer-based summarization using `facebook/bart-large-cnn`
-- 🔁 Sliding-window chunking for long-document processing
-- ⚖️ Legal clause extraction and highlighting
-- 🚀 FastAPI REST API for real-time inference
-- 📑 Structured JSON responses
-- 🔍 Sentence-boundary-aware chunking
-- 🏷️ Key legal term detection
-- 🧩 Modular NLP pipeline architecture
+-  Supports **PDF**, **DOCX**, and **plain text**
+-  Transformer-based summarization using `facebook/bart-large-cnn`
+-  Sliding-window chunking for long-document processing
+-  Legal clause extraction and highlighting
+-  FastAPI REST API for real-time inference
+-  Structured JSON responses
+-  Sentence-boundary-aware chunking
+-  Key legal term detection
+-  Modular NLP pipeline architecture
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```text
 Upload (PDF / DOCX / text)
@@ -62,7 +62,7 @@ Upload (PDF / DOCX / text)
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Category | Technologies |
 |---|---|
@@ -76,7 +76,7 @@ Upload (PDF / DOCX / text)
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 | File | Purpose |
 |------|---------|
@@ -87,7 +87,7 @@ Upload (PDF / DOCX / text)
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ```bash
 pip install -r requirements.txt
@@ -108,7 +108,7 @@ http://localhost:8000/docs
 
 ---
 
-## 📡 API Endpoints
+##  API Endpoints
 
 ### POST `/summarize/file`
 
@@ -139,7 +139,7 @@ curl -X POST http://localhost:8000/summarize/text \
 
 ---
 
-## 📈 Improvements Over v1
+##  Improvements Over v1
 
 | Feature | v1 | v2 |
 |---|---|---|
@@ -152,7 +152,7 @@ curl -X POST http://localhost:8000/summarize/text \
 
 ---
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 - Semantic deduplication
 - RAG-based legal retrieval
@@ -163,6 +163,6 @@ curl -X POST http://localhost:8000/summarize/text \
 
 ---
 
-## 📜 License
+##  License
 
 This project is licensed under the MIT License.
