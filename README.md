@@ -1,10 +1,38 @@
 # ⚖️ Legal Document Summarizer
 
-NLP summarization pipeline for legal documents using BART, FastAPI, PyPDF2, and python-docx.
+<p align="center">
 
-## Architecture
+![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python)
+![FastAPI](https://img.shields.io/badge/FastAPI-API-green?style=for-the-badge&logo=fastapi)
+![Transformers](https://img.shields.io/badge/HuggingFace-BART-yellow?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-orange?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 
-```
+</p>
+
+<p align="center">
+Production-ready NLP pipeline for summarizing legal documents using BART, FastAPI, PyPDF2, and python-docx.
+</p>
+
+---
+
+## ✨ Features
+
+- 📄 Supports **PDF**, **DOCX**, and **plain text**
+- 🧠 Transformer-based summarization using `facebook/bart-large-cnn`
+- 🔁 Sliding-window chunking for long-document processing
+- ⚖️ Legal clause extraction and highlighting
+- 🚀 FastAPI REST API for real-time inference
+- 📑 Structured JSON responses
+- 🔍 Sentence-boundary-aware chunking
+- 🏷️ Key legal term detection
+- 🧩 Modular NLP pipeline architecture
+
+---
+
+## 🏗️ Architecture
+
+```text
 Upload (PDF / DOCX / text)
         │
         ▼
@@ -13,90 +41,128 @@ Upload (PDF / DOCX / text)
   └── DOCX → python-docx
         │
         ▼
- Sliding-Window Chunking          ← key improvement over fixed 512-char slicing
+ Sliding-Window Chunking
   ├── chunk_size = 3000 chars
   ├── overlap    = 300 chars
-  └── sentence-boundary snapping  ← never cuts mid-sentence
+  └── sentence-boundary snapping
         │
         ▼
-  BART Summarization (per chunk)
+  BART Summarization
   └── facebook/bart-large-cnn
-  └── auto max_length per chunk
         │
         ▼
   Post-processing
   ├── Combine chunk summaries
-  ├── Key clause detection (18 legal terms)
+  ├── Key clause detection
   └── Markdown highlighting
         │
         ▼
   FastAPI JSON Response
 ```
 
-## Files
+---
+
+## 🛠️ Tech Stack
+
+| Category | Technologies |
+|---|---|
+| Backend | FastAPI |
+| NLP | Hugging Face Transformers |
+| Model | facebook/bart-large-cnn |
+| PDF Parsing | PyPDF2 |
+| DOCX Parsing | python-docx |
+| Language | Python |
+| API Server | Uvicorn |
+
+---
+
+## 📂 Project Structure
 
 | File | Purpose |
 |------|---------|
-| `main.py` | FastAPI app — routes for file upload and plain text |
-| `summarizer.py` | Core NLP pipeline (extraction, chunking, summarization) |
+| `main.py` | FastAPI routes and API logic |
+| `summarizer.py` | Core NLP summarization pipeline |
 | `requirements.txt` | Python dependencies |
-| `LegalDocSummarizer_v2.ipynb` | Colab-compatible notebook version |
+| `LegalDocSummarizer_v2.ipynb` | Colab notebook version |
 
-## Quick Start
+---
+
+## 🚀 Quick Start
 
 ```bash
 pip install -r requirements.txt
 python main.py
 ```
 
-Server starts at `http://localhost:8000`  
-Interactive docs at `http://localhost:8000/docs`
+Server starts at:
 
-## API Endpoints
+```text
+http://localhost:8000
+```
 
-### `POST /summarize/file`
-Upload a PDF or DOCX file.
+Swagger Docs:
+
+```text
+http://localhost:8000/docs
+```
+
+---
+
+## 📡 API Endpoints
+
+### POST `/summarize/file`
+
+Upload PDF or DOCX files.
 
 ```bash
 curl -X POST http://localhost:8000/summarize/file \
      -F 'file=@contract.pdf'
 ```
 
-**Response:**
-```json
-{
-  "filename": "contract.pdf",
-  "file_type": "PDF",
-  "processing_time_seconds": 8.4,
-  "word_count_original": 4200,
-  "summary": "Party 1 agrees to provide services...",
-  "key_clauses": [
-    { "term": "Termination", "sentence": "Either party may terminate..." }
-  ],
-  "highlighted_summary": "Party 1 agrees to provide **Services**..."
-}
-```
+### POST `/summarize/text`
 
-### `POST /summarize/text`
-Submit plain text.
+Submit plain text directly.
 
 ```bash
 curl -X POST http://localhost:8000/summarize/text \
      -F 'text=This Agreement is entered into as of...'
 ```
 
-### `GET /health`
+### GET `/health`
+
 ```json
-{ "status": "ok", "model": "facebook/bart-large-cnn" }
+{
+  "status": "ok",
+  "model": "facebook/bart-large-cnn"
+}
 ```
 
-## Key Improvements Over v1
+---
 
-| Feature | v1 (Notebook) | v2 (This project) |
-|---------|--------------|-------------------|
-| Chunking | Fixed 512-char slices | Sliding window + sentence snapping |
-| Input formats | PDF only | PDF, DOCX, plain text |
-| API | None | FastAPI REST endpoint |
+## 📈 Improvements Over v1
+
+| Feature | v1 | v2 |
+|---|---|---|
+| Chunking | Fixed slicing | Sliding window |
+| Input formats | PDF only | PDF + DOCX + text |
+| API | None | FastAPI |
 | Key terms | 8 | 18 |
-| max_length | Fixed 150 | Auto-adjusted to input size |
-| Serving | Colab only | Local / any server |
+| Deployment | Colab only | Production-ready |
+| Summarization | Static params | Dynamic tuning |
+
+---
+
+## 🔮 Future Improvements
+
+- Semantic deduplication
+- RAG-based legal retrieval
+- OCR support for scanned PDFs
+- Multi-language legal summarization
+- Docker deployment
+- Authentication & rate limiting
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
