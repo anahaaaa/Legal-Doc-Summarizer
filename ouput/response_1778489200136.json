@@ -1,0 +1,62 @@
+{
+  "filename": "Detailed_Real_World_Legal_Agreement.pdf",
+  "file_type": "PDF",
+  "processing_time_seconds": 99.31,
+  "word_count_original": 2606,
+  "summary": " The Master Technology Services Agreement (\"Agreement\") is entered into and made effective as of January 1, 2026 (\"Effective Date\") Nexora Technologies Pvt. Ltd., a corporationorganized under the laws of India with its principal office located in Chennai, Tamil Nadu, India. The Client hereby engages the Service Provider to perform software engineering, cloud architecture, cybersecurity auditing, AI/ML implementation, DevOps automation, infrastructure modernization, and infrastructure modernization services .  The Client hereby engages the Service Provider to perform software engineering, cloud architecture, cybersecurity auditing, AI/ML implementation, DevOps automation, infrastructure modernization, andenterprise integration services . The Service Provider agrees to maintain a minimum uptime commitment of 99.9% for hosted services .  The Client shall reimburse approved travel, licensing, and third-party software costs incurred during the execution of Services . Each Party shall comply with applicable data protection laws including GDPR, DPDP Act (India), and other relevant privacy regulations .  Each Party represents that it possesses the legal authority to enter into this Agreement and perform its obligations . The Service Provider retains ownership of all reusable frameworks, methodologies, libraries, templates, and proprietary tooling developed independently of the Client's project . The Receiving Party shall protect Confidential Information using at least the same degree of care used to protect its own confidential information .  The Receiving Party shall protect Confidential Information using at least the same degree of care used to protect its own confidential information . Confidential information may only be disclosed to employees, contractors, legal counsel, or auditors who possess a legitimate business need . Neither Party shall be liable for indirect, incidental, punitive, or consequential damages arising from this Agreement, including loss of profits, revenue, or business opportunities .  Any dispute arising under this Agreement shall first be addressed through executive-level negotiations . If unresolved within thirty (30) days, the dispute shall proceed to mediation administered by the Singapore International Mediation Centre . If mediation fails, the matter shall be resolved through binding arbitration under SIAC Rules in Singapore . Neither Party shall be liable for delays or failures caused by Force Majeure Events .  Neither Party shall be liable for delays or failures caused by Force Majeure Events . Agreement is governed by and construed in accordance with the laws of Singapore without regard to conflict-of-law principles . Agreement constitutes the complete understanding between the Parties and supersedes all prior-preformed agreements .  $12,500: Backend, APIs, enterprise integrations & security audits . $6,000:",
+  "key_clauses": [
+    {
+      "term": "Services",
+      "sentence": "MASTER TECHNOLOGY SERVICES AGREEMENT This Master Technology Services Agreement (\"Agreement\") is entered into and made effective as of January 1, 2026 (\"Effective Date\") by and between Nexora Technologies Pvt."
+    },
+    {
+      "term": "Confidential Information",
+      "sentence": "\"Confidential Information\" means all proprietary, financial, technical, operational, or business information disclosed by one Party to another."
+    },
+    {
+      "term": "Force Majeure",
+      "sentence": "\"Force Majeure Event\" means events beyond reasonable control including cyberattacks, natural disasters, governmental restrictions, labor disputes, pandemics, and infrastructure failures."
+    },
+    {
+      "term": "Obligations",
+      "sentence": "SERVICE LEVEL OBLIGATIONS The Service Provider agrees to maintain a minimum uptime commitment of 99.9% for hosted services."
+    },
+    {
+      "term": "Fees",
+      "sentence": "FEES, BILLING, AND PAYMENT The Client shall pay the Service Provider according to the pricing schedule set forth in Exhibit A."
+    },
+    {
+      "term": "Payment",
+      "sentence": "Delayed payments shall accrue interest at a rate of 1.5% per month or the maximum permissible legal rate, whichever is lower."
+    },
+    {
+      "term": "Intellectual Property",
+      "sentence": "INTELLECTUAL PROPERTY RIGHTS All pre-existing intellectual property belonging to either Party shall remain the exclusive property of that Party."
+    },
+    {
+      "term": "Representations",
+      "sentence": "REPRESENTATIONS AND WARRANTIES Each Party represents that it possesses the legal authority to enter into this Agreement and perform its obligations."
+    },
+    {
+      "term": "Liability",
+      "sentence": "LIMITATION OF LIABILITY Neither Party shall be liable for indirect, incidental, punitive, or consequential damages arising from this Agreement, including loss of profits, revenue, or business opportunities."
+    },
+    {
+      "term": "Termination",
+      "sentence": "TERMINATION Either Party may terminate this Agreement upon ninety (90) days written notice."
+    },
+    {
+      "term": "Dispute Resolution",
+      "sentence": "DISPUTE RESOLUTION Any dispute arising under this Agreement shall first be addressed through executive-level negotiations."
+    },
+    {
+      "term": "Arbitration",
+      "sentence": "If mediation fails, the matter shall be resolved through binding arbitration under SIAC Rules in Singapore."
+    },
+    {
+      "term": "Governing Law",
+      "sentence": "GOVERNING LAW This Agreement shall be governed by and construed in accordance with the laws of Singapore without regard to conflict-of-law principles."
+    }
+  ],
+  "highlighted_summary": " The Master Technology **Services** Agreement (\"Agreement\") is entered into and made effective as of January 1, 2026 (\"Effective Date\") Nexora Technologies Pvt. Ltd., a corporationorganized under the laws of India with its principal office located in Chennai, Tamil Nadu, India. The Client hereby engages the Service Provider to perform software engineering, cloud architecture, cybersecurity auditing, AI/ML implementation, DevOps automation, infrastructure modernization, and infrastructure modernization **Services** .  The Client hereby engages the Service Provider to perform software engineering, cloud architecture, cybersecurity auditing, AI/ML implementation, DevOps automation, infrastructure modernization, andenterprise integration **Services** . The Service Provider agrees to maintain a minimum uptime commitment of 99.9% for hosted **Services** .  The Client shall reimburse approved travel, licensing, and third-party software costs incurred during the execution of **Services** . Each Party shall comply with applicable data protection laws including GDPR, DPDP Act (India), and other relevant privacy regulations .  Each Party represents that it possesses the legal authority to enter into this Agreement and perform its **Obligations** . The Service Provider retains ownership of all reusable frameworks, methodologies, libraries, templates, and proprietary tooling developed independently of the Client's project . The Receiving Party shall protect **Confidential Information** using at least the same degree of care used to protect its own **Confidential Information** .  The Receiving Party shall protect **Confidential Information** using at least the same degree of care used to protect its own **Confidential Information** . **Confidential Information** may only be disclosed to employees, contractors, legal counsel, or auditors who possess a legitimate business need . Neither Party shall be liable for indirect, incidental, punitive, or consequential damages arising from this Agreement, including loss of profits, revenue, or business opportunities .  Any dispute arising under this Agreement shall first be addressed through executive-level negotiations . If unresolved within thirty (30) days, the dispute shall proceed to mediation administered by the Singapore International Mediation Centre . If mediation fails, the matter shall be resolved through binding **Arbitration** under SIAC Rules in Singapore . Neither Party shall be liable for delays or failures caused by **Force Majeure** Events .  Neither Party shall be liable for delays or failures caused by **Force Majeure** Events . Agreement is governed by and construed in accordance with the laws of Singapore without regard to conflict-of-law principles . Agreement constitutes the complete understanding between the Parties and supersedes all prior-preformed agreements .  $12,500: Backend, APIs, enterprise integrations & security audits . $6,000:"
+}
